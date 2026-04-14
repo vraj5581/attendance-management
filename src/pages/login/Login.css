@@ -63,13 +63,13 @@
   margin: 0;
   font-size: 32px;
   font-weight: 800;
-  color: #1e293b;
+  color: var(--apple-black);
   letter-spacing: -1px;
 }
 
 .login-subtitle {
   margin: 8px 0 0;
-  color: #64748b;
+  color: var(--apple-grey-text);
   font-size: 15px;
   font-weight: 500;
 }
@@ -95,11 +95,11 @@
 
 .login-field-group input {
   padding: 14px 18px;
-  border: 2px solid #e2e8f0;
+  border: 2px solid var(--apple-orange-soft);
   border-radius: 14px;
   font-size: 16px;
   transition: all 0.2s ease;
-  background: #f8fafc;
+  background: var(--apple-orange-soft);
 }
 
 .login-field-group input:focus {

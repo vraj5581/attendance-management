@@ -306,7 +306,7 @@ export default function EmployeeDashboard({ employeeData, onLogout }) {
                           <span className="log-entry-type-badge" style={{ color: 'var(--apple-orange-deep)' }}>
                             {rec.type === 'IN' ? 'Check IN' : 'Check OUT'}
                           </span>
-                          <span style={{ fontSize: '18px', fontWeight: '800', color: '#1E293B', marginTop: '4px' }}>
+                          <span style={{ fontSize: '18px', fontWeight: '800', color: 'var(--apple-black)', marginTop: '4px' }}>
                             {new Date(rec.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })}
                           </span>
                         </div>
@@ -332,7 +332,7 @@ export default function EmployeeDashboard({ employeeData, onLogout }) {
                 <button 
                   onClick={() => setSelectedDateDetails({ ...selectedDateDetails, open: false })}
                   className="logout-btn-emp"
-                  style={{ width: '100%', marginTop: '24px', padding: '14px', border: '1px solid #E2E8F0', borderRadius: '12px' }}
+                  style={{ width: '100%', marginTop: '24px', padding: '14px', border: '1px solid var(--apple-orange-soft)', borderRadius: '12px' }}
                 >
                   Close View
                 </button>
@@ -437,13 +437,13 @@ export default function EmployeeDashboard({ employeeData, onLogout }) {
                            value={newPin}
                            onChange={(e) => setNewPin(e.target.value)}
                            placeholder="Enter new PIN"
-                           style={{ width: '100%', padding: '14px 45px 14px 16px', borderRadius: '12px', border: '2px solid #E2E8F0', boxSizing: 'border-box', fontSize: '16px', fontWeight: '600' }}
+                           style={{ width: '100%', padding: '14px 45px 14px 16px', borderRadius: '12px', border: '2px solid var(--apple-orange-soft)', boxSizing: 'border-box', fontSize: '16px', fontWeight: '600' }}
                            required
                          />
                          <button 
                            type="button"
                            onClick={() => setShowNewPin(!showNewPin)}
-                           style={{ position: 'absolute', right: '14px', top: '50%', transform: 'translateY(-50%)', background: 'transparent', border: 'none', cursor: 'pointer', color: '#94A3B8' }}
+                           style={{ position: 'absolute', right: '14px', top: '50%', transform: 'translateY(-50%)', background: 'transparent', border: 'none', cursor: 'pointer', color: 'var(--apple-grey-text)' }}
                          >
                            {showNewPin ? (
                              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 19c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>
@@ -464,7 +464,7 @@ export default function EmployeeDashboard({ employeeData, onLogout }) {
                      <button 
                        type="button"
                        onClick={() => setIsChangingPin(false)}
-                       style={{ width: '100%', marginTop: '12px', padding: '12px', background: 'transparent', color: '#94A3B8', border: 'none', borderRadius: '10px', fontWeight: '600', cursor: 'pointer', fontSize: '14px' }}
+                       style={{ width: '100%', marginTop: '12px', padding: '12px', background: 'transparent', color: 'var(--apple-grey-text)', border: 'none', borderRadius: '10px', fontWeight: '600', cursor: 'pointer', fontSize: '14px' }}
                      >
                        Go Back
                      </button>

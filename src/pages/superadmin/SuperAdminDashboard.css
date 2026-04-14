@@ -4,7 +4,7 @@
   max-width: 1200px;
   margin: 0 auto;
   font-family: 'Inter', system-ui, sans-serif;
-  color: #1F2937;
+  color: var(--apple-black);
   min-height: 100vh;
   background: var(--apple-orange-soft);
   box-sizing: border-box;
@@ -15,23 +15,23 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
-  background: #ffffff;
-  padding: 20px 30px;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  background: var(--apple-black);
+  padding: 24px 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .dashboard-header h1 {
   margin: 0;
   font-size: 28px;
-  color: #1F2937;
+  color: #FFFFFF;
   font-weight: 800;
 }
 
 .admin-count-tag {
   margin: 5px 0 0 0;
   font-size: 14px;
-  color: #6B7280;
+  color: #9CA3AF;
   font-weight: 500;
 }
 
@@ -54,7 +54,7 @@
 
 .dashboard-content {
   background: #ffffff;
-  border: 1px solid #E5E7EB;
+  border: 1px solid var(--apple-orange-soft);
   border-radius: 20px;
   padding: 30px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
@@ -73,7 +73,7 @@
 .admins-header h2 {
   margin: 0;
   font-size: 22px;
-  color: #1F2937;
+  color: var(--apple-black);
   font-weight: 700;
 }
 
@@ -152,13 +152,13 @@
 .modal-header h2 {
   margin: 0;
   font-size: 20px;
-  color: #1F2937;
+  color: var(--apple-black);
 }
 
 .close-modal-btn {
   background: transparent;
   border: none;
-  color: #6B7280;
+  color: var(--apple-grey-text);
   cursor: pointer;
   padding: 6px;
   border-radius: 6px;
@@ -170,7 +170,7 @@
 
 .close-modal-btn:hover {
   background: #E5E7EB;
-  color: #1F2937;
+  color: var(--apple-black);
 }
 
 .admin-form {
@@ -195,7 +195,7 @@
   background: var(--apple-orange-soft);
   border: 1px solid #D1D5DB;
   border-radius: 10px;
-  color: #1F2937;
+  color: var(--apple-black);
   font-size: 15px;
   box-sizing: border-box;
   transition: all 0.2s;
@@ -240,7 +240,7 @@
 
 .admin-card {
   background: #ffffff;
-  border: 1px solid #E5E7EB;
+  border: 1px solid var(--apple-orange-soft);
   border-radius: 12px;
   padding: 16px;
   position: relative;
@@ -257,7 +257,7 @@
 .admin-card h3 {
   margin-top: 0;
   margin-bottom: 12px;
-  color: #1F2937;
+  color: var(--apple-black);
   font-size: 16px;
   font-weight: 700;
   padding-right: 60px;
@@ -312,23 +312,23 @@
   background: var(--apple-orange-soft);
   padding: 8px 10px;
   border-radius: 6px;
-  border: 1px solid #E5E7EB;
+  border: 1px solid var(--apple-orange-soft);
 }
 
 .admin-detail .label {
-  color: #6B7280;
+  color: var(--apple-grey-text);
   font-weight: 500;
 }
 
 .admin-detail .value {
-  color: #1F2937;
+  color: var(--apple-black);
   font-family: 'Inter', system-ui, sans-serif;
   font-weight: 600;
 }
 
 .loading-text {
   text-align: center;
-  color: #6B7280;
+  color: var(--apple-grey-text);
   padding: 60px;
   font-size: 16px;
 }

@@ -982,7 +982,7 @@ export default function AdminDashboard({ adminData, onLogout }) {
                         >
                           <div
                             style={{
-                              color: "#2563EB",
+                              color: "var(--apple-orange-base)",
                               fontSize: "12px",
                               fontWeight: 700,
                               marginBottom: "6px",
@@ -998,8 +998,8 @@ export default function AdminDashboard({ adminData, onLogout }) {
                               height: `${Math.max(day.presentPercent, 2)}%`,
                               background:
                                 day.Present === 0
-                                  ? "#F3F4F6"
-                                  : "linear-gradient(to top, #2563EB, #3B82F6)",
+                                  ? "var(--apple-orange-soft)"
+                                  : "linear-gradient(to top, var(--apple-orange-base), var(--apple-orange-vibrant))",
                               borderRadius: "6px 6px 0 0",
                               position: "relative",
                               transition: "all 0.3s ease",
@@ -1025,7 +1025,7 @@ export default function AdminDashboard({ adminData, onLogout }) {
                             flex: 1,
                             textAlign: "center",
                             fontSize: "12px",
-                            color: "#64748b",
+                            color: "var(--apple-grey-text)",
                             fontWeight: 600,
                             cursor: "pointer",
                           }}
@@ -1040,7 +1040,7 @@ export default function AdminDashboard({ adminData, onLogout }) {
                 {/* Recent Activity Mini-Feed */}
                 <div className="content-card" style={{ marginTop: "30px" }}>
                   <div className="card-header-flex">
-                    <h2 style={{ fontSize: "20px", color: "#1F2937" }}>
+                    <h2 style={{ fontSize: "20px", color: "var(--apple-black)" }}>
                       Recent Activity Feed
                     </h2>
                     <button
@@ -1382,7 +1382,7 @@ export default function AdminDashboard({ adminData, onLogout }) {
                         border: "none",
                         marginLeft: "6px",
                         cursor: "pointer",
-                        color: "#64748B",
+                        color: "var(--apple-grey-text)",
                         display: "flex",
                         alignItems: "center",
                         padding: "2px",
@@ -1414,7 +1414,7 @@ export default function AdminDashboard({ adminData, onLogout }) {
                         border: "none",
                         marginLeft: "6px",
                         cursor: "pointer",
-                        color: "#64748B",
+                        color: "var(--apple-grey-text)",
                         display: "flex",
                         alignItems: "center",
                         padding: "2px",
@@ -1481,7 +1481,7 @@ export default function AdminDashboard({ adminData, onLogout }) {
                             style={{ cursor: "pointer" }}
                             title="Click to view total hours worked"
                           >
-                            <td className="date-cell" style={{ fontWeight: "500", color: "#64748B" }}>
+                            <td className="date-cell" style={{ fontWeight: "500", color: "var(--apple-grey-text)" }}>
                               {dateObj.toLocaleDateString("en-GB", {
                                 day: "2-digit",
                                 month: "short",
@@ -1495,7 +1495,7 @@ export default function AdminDashboard({ adminData, onLogout }) {
                                 second: "2-digit",
                               })}
                             </td>
-                            <td className="name-cell" style={{ color: "#2563EB", fontWeight: "600" }}>
+                            <td className="name-cell" style={{ color: "var(--apple-orange-base)", fontWeight: "600" }}>
                               {empObj ? empObj.name : "Unknown Employee"}
                             </td>
                             <td className="action-cell" style={{ textAlign: "center" }}>
@@ -1556,7 +1556,7 @@ export default function AdminDashboard({ adminData, onLogout }) {
                           style={{ cursor: "pointer" }}
                         >
                           <div className="card-top">
-                            <span className="card-name" style={{ color: "#2563EB" }}>
+                            <span className="card-name" style={{ color: "var(--apple-orange-base)" }}>
                               {empObj ? empObj.name : "Unknown Employee"}
                             </span>
                             <span
@@ -1581,7 +1581,7 @@ export default function AdminDashboard({ adminData, onLogout }) {
                               </span>
                               <button
                                 className="icon-btn"
-                                style={{ color: "#2563EB", padding: "0" }}
+                                style={{ color: "var(--apple-orange-base)", padding: "0" }}
                                 onClick={(e) => {
                                   e.stopPropagation();
                                   openEditAttendanceModal(rec);
@@ -1716,7 +1716,7 @@ export default function AdminDashboard({ adminData, onLogout }) {
                 <div className="settings-section">
                   <div className="settings-header-group">
                     <div className="settings-icon-circle">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563EB" strokeWidth="2">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--apple-orange-base)" strokeWidth="2">
                         <circle cx="12" cy="12" r="10"></circle>
                         <polyline points="12 6 12 12 16 14"></polyline>
                       </svg>
@@ -1849,7 +1849,7 @@ export default function AdminDashboard({ adminData, onLogout }) {
                       border: "none",
                       cursor: "pointer",
                       display: "flex",
-                      color: "#64748b",
+                      color: "var(--apple-grey-text)",
                     }}
                   >
                     {showPin ? (
@@ -1962,7 +1962,7 @@ export default function AdminDashboard({ adminData, onLogout }) {
                       top: "50%",
                       transform: "translateY(-50%)",
                       pointerEvents: "none",
-                      color: "#1F2937",
+                      color: "var(--apple-black)",
                     }}
                     width="18"
                     height="18"
@@ -2017,7 +2017,7 @@ export default function AdminDashboard({ adminData, onLogout }) {
                         top: "50%",
                         transform: "translateY(-50%)",
                         pointerEvents: "none",
-                        color: "#1F2937",
+                        color: "var(--apple-black)",
                       }}
                       width="18"
                       height="18"
@@ -2047,7 +2047,7 @@ export default function AdminDashboard({ adminData, onLogout }) {
                         top: "50%",
                         transform: "translateY(-50%)",
                         pointerEvents: "none",
-                        color: "#1F2937",
+                        color: "var(--apple-black)",
                       }}
                       width="18"
                       height="18"
@@ -2094,7 +2094,7 @@ export default function AdminDashboard({ adminData, onLogout }) {
                       top: "50%",
                       transform: "translateY(-50%)",
                       pointerEvents: "none",
-                      color: "#1F2937",
+                      color: "var(--apple-black)",
                     }}
                     width="18"
                     height="18"
@@ -2138,7 +2138,7 @@ export default function AdminDashboard({ adminData, onLogout }) {
                   style={{
                     flex: 1,
                     padding: "14px",
-                    background: "#2563EB",
+                    background: "var(--apple-orange-base)",
                     color: "white",
                     border: "none",
                     borderRadius: "10px",
@@ -2184,7 +2184,7 @@ export default function AdminDashboard({ adminData, onLogout }) {
                   type="text"
                   value={manualPunchEmp?.name || ""}
                   disabled
-                  style={{ background: "#F3F4F6" }}
+                  style={{ background: "var(--apple-orange-soft)" }}
                 />
               </div>
               <div className="input-group">
@@ -2194,7 +2194,7 @@ export default function AdminDashboard({ adminData, onLogout }) {
                   value={manualPunchType === "IN" ? "Check IN" : "Check OUT"}
                   disabled
                   style={{
-                    background: "#F3F4F6",
+                    background: "var(--apple-orange-soft)",
                     color: manualPunchType === "IN" ? "#059669" : "#D97706",
                     fontWeight: "700",
                   }}
@@ -2217,7 +2217,7 @@ export default function AdminDashboard({ adminData, onLogout }) {
                       top: "50%",
                       transform: "translateY(-50%)",
                       pointerEvents: "none",
-                      color: "#1F2937",
+                      color: "var(--apple-black)",
                     }}
                     width="18"
                     height="18"
@@ -2259,7 +2259,7 @@ export default function AdminDashboard({ adminData, onLogout }) {
                       top: "50%",
                       transform: "translateY(-50%)",
                       pointerEvents: "none",
-                      color: "#1F2937",
+                      color: "var(--apple-black)",
                     }}
                     width="18"
                     height="18"
@@ -2317,7 +2317,7 @@ export default function AdminDashboard({ adminData, onLogout }) {
                   type="text"
                   value={employees.find(e => e.id === editingAttendance?.employeeId)?.name || "Unknown Employee"}
                   disabled
-                  style={{ background: "#F3F4F6" }}
+                  style={{ background: "var(--apple-orange-soft)" }}
                 />
               </div>
               <div className="input-group">
@@ -2329,7 +2329,7 @@ export default function AdminDashboard({ adminData, onLogout }) {
                   }
                   disabled
                   style={{
-                    background: "#F3F4F6",
+                    background: "var(--apple-orange-soft)",
                     color:
                       editingAttendance?.type === "IN" ? "#059669" : "#D97706",
                     fontWeight: "700",
@@ -2353,7 +2353,7 @@ export default function AdminDashboard({ adminData, onLogout }) {
                       top: "50%",
                       transform: "translateY(-50%)",
                       pointerEvents: "none",
-                      color: "#1F2937",
+                      color: "var(--apple-black)",
                     }}
                     width="18"
                     height="18"
@@ -2395,7 +2395,7 @@ export default function AdminDashboard({ adminData, onLogout }) {
                       top: "50%",
                       transform: "translateY(-50%)",
                       pointerEvents: "none",
-                      color: "#1F2937",
+                      color: "var(--apple-black)",
                     }}
                     width="18"
                     height="18"
@@ -2437,7 +2437,7 @@ export default function AdminDashboard({ adminData, onLogout }) {
             </div>
             <div style={{ padding: '20px', maxHeight: '60vh', overflowY: 'auto' }}>
               {quickViewModal.employees.length === 0 ? (
-                <p style={{ textAlign: 'center', color: '#64748b', padding: '20px' }}>No records found.</p>
+                <p style={{ textAlign: 'center', color: 'var(--apple-grey-text)', padding: '20px' }}>No records found.</p>
               ) : (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                   {quickViewModal.employees.map(emp => (
@@ -2446,12 +2446,12 @@ export default function AdminDashboard({ adminData, onLogout }) {
                       justifyContent: 'space-between', 
                       alignItems: 'center',
                       padding: '12px 16px',
-                      background: '#f8fafc',
+                      background: 'var(--apple-orange-soft)',
                       borderRadius: '10px',
                       border: '1px solid #e2e8f0'
                     }}>
                       <span style={{ fontWeight: '700', color: '#1e293b', textTransform: 'uppercase', fontSize: '13px' }}>{emp.name}</span>
-                      <span style={{ fontSize: '11px', color: '#64748b', fontWeight: '600', textTransform: 'uppercase', background: '#e2e8f0', padding: '2px 8px', borderRadius: '4px' }}>
+                      <span style={{ fontSize: '11px', color: 'var(--apple-grey-text)', fontWeight: '600', textTransform: 'uppercase', background: '#e2e8f0', padding: '2px 8px', borderRadius: '4px' }}>
                         {emp.role || 'Staff'}
                       </span>
                     </div>
@@ -2525,7 +2525,7 @@ export default function AdminDashboard({ adminData, onLogout }) {
             <div className="modal-header-admin">
               <div style={{ display: 'flex', flexDirection: 'column' }}>
                 <h2 style={{ fontSize: '18px', marginBottom: '2px' }}>Attendance Details</h2>
-                <span style={{ fontSize: '13px', color: '#64748B', fontWeight: '500' }}>{trendDetailModal.day.fullDate}</span>
+                <span style={{ fontSize: '13px', color: 'var(--apple-grey-text)', fontWeight: '500' }}>{trendDetailModal.day.fullDate}</span>
               </div>
               <button className="close-btn-admin" onClick={() => setTrendDetailModal({ open: false, day: null })}>
                 ✕
@@ -2565,7 +2565,7 @@ export default function AdminDashboard({ adminData, onLogout }) {
                       borderRadius: '4px'
                     }}></div>
                   </div>
-                  <div style={{ marginTop: '12px', fontSize: '12px', color: '#64748B', textAlign: 'center' }}>
+                  <div style={{ marginTop: '12px', fontSize: '12px', color: 'var(--apple-grey-text)', textAlign: 'center' }}>
                     Total Staff: <strong>{trendDetailModal.day.Total}</strong>
                   </div>
                 </div>
