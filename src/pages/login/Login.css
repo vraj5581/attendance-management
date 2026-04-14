@@ -1,0 +1,205 @@
+/* Unified Login CSS - Premium Aesthetic */
+
+.login-page-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* iPhone 17 Trend Orange Gradient */
+  background: linear-gradient(135deg, #f47a3e 0%, #1d1d1f 100%);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background floating accent orbs */
+.login-page-container::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: var(--apple-orange-vibrant);
+  filter: blur(80px);
+  opacity: 0.2;
+  top: -100px;
+  left: -50px;
+  border-radius: 50%;
+}
+
+.login-page-container::after {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: var(--apple-orange-base);
+  filter: blur(100px);
+  opacity: 0.15;
+  bottom: -150px;
+  right: -100px;
+  border-radius: 50%;
+}
+
+.login-card-unified {
+  background: var(--apple-glass);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  width: 100%;
+  max-width: 440px;
+  padding: 48px;
+  border-radius: 28px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.login-head-branding {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.login-head-branding h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  color: #1e293b;
+  letter-spacing: -1px;
+}
+
+.login-subtitle {
+  margin: 8px 0 0;
+  color: #64748b;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.login-form-unified {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.login-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-field-group label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #475569;
+  padding-left: 4px;
+}
+
+.login-field-group input {
+  padding: 14px 18px;
+  border: 2px solid #e2e8f0;
+  border-radius: 14px;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  background: #f8fafc;
+}
+
+.login-field-group input:focus {
+  outline: none;
+  border-color: var(--apple-orange-base);
+  background: #ffffff;
+  box-shadow: 0 0 0 4px var(--apple-orange-glow);
+}
+
+.login-error-msg {
+  background: #fef2f2;
+  color: #dc2626;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  border: 1px solid #fee2e2;
+}
+
+.login-submit-btn {
+  background: var(--apple-orange-gradient);
+  color: #ffffff;
+  padding: 16px;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 8px;
+  box-shadow: 0 8px 16px var(--apple-orange-glow);
+}
+
+.login-submit-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px var(--apple-orange-glow);
+}
+
+.login-submit-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.login-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Eye Toggle Styling */
+.password-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-input-wrapper input {
+  width: 100%;
+  padding-right: 50px !important; /* Ensure space for the eye icon */
+}
+
+.eye-toggle-btn-unified {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  z-index: 5;
+  transition: color 0.2s ease;
+}
+
+.eye-toggle-btn-unified:hover {
+  color: var(--apple-orange-base);
+}
+
+@media (max-width: 768px) {
+  .login-card-unified {
+    padding: 32px 24px;
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-card-unified {
+    padding: 32px 20px;
+    border-radius: 20px;
+    max-width: 92%;
+  }
+  
+  .login-field-group input {
+    padding: 12px 14px;
+    font-size: 15px;
+  }
+  
+  .login-head-branding h1 {
+    font-size: 26px;
+  }
+}
