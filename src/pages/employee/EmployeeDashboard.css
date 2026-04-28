@@ -72,6 +72,7 @@
   font-weight: 800;
   background: var(--apple-orange-gradient);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Inter', sans-serif;
   letter-spacing: -2px;
